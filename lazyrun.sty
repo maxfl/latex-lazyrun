@@ -60,7 +60,7 @@
   % {#1} - filename
   \providetoggle{lazyrun@file-loaded:#1}%
   \SplitDirnameFilename{#1}
-  \edef\LazyRunInputDir{\SplitDirnameFilename}%
+  \edef\LazyRunInputDir{\SplitResultDirname}%
   \edef\LazyRunInputFile{#1}%
   \iftoggle{lazyrun@file-loaded:#1}{}{%
     \input{#1}%

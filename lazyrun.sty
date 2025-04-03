@@ -69,7 +69,7 @@
 }
 
 \newcommand\lazyrun@resetvars{%
-  \let\LazyRunInputDir\undefined%
+  \edef\LazyRunInputDir{.}%
   \let\LazyRunInputFile\undefined%
 }
 
@@ -125,3 +125,4 @@
   }%
 }
 
+\lazyrun@resetvars
